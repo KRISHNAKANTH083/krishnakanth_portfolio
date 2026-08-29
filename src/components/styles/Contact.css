@@ -1,0 +1,276 @@
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contact-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-container > h3 {
+  margin: 0 0 70px;
+
+  font-size: 70px;
+  line-height: 1;
+
+  font-weight: 500;
+}
+
+/* =========================================
+   CONTACT CONTENT
+========================================= */
+
+.contact-flex {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(220px, 1.3fr)
+    minmax(160px, 1fr)
+    minmax(220px, 1fr)
+    minmax(260px, 1.4fr);
+
+  gap: 60px;
+
+  align-items: start;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   EACH COLUMN
+========================================= */
+
+.contact-box {
+  min-width: 0;
+}
+
+.contact-box h4 {
+  margin: 0 0 20px;
+
+  font-size: 16px;
+  line-height: 1;
+
+  font-weight: 500;
+}
+
+.contact-box p {
+  margin: 0;
+}
+
+/* =========================================
+   EMAIL
+========================================= */
+
+.contact-box p a {
+  color: inherit;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+.contact-box p a:hover {
+  color: var(--accentColor);
+}
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.contact-social {
+  width: 160px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 0;
+
+  color: inherit;
+
+  font-size: 20px;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #444;
+
+  transition: color 0.3s ease;
+}
+
+.contact-social + .contact-social {
+  margin-top: 0;
+}
+
+.contact-social svg {
+  font-size: 18px;
+}
+
+.contact-social:hover {
+  color: var(--accentColor);
+}
+
+/* =========================================
+   RESUME
+========================================= */
+
+.contact-resume {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  min-width: 215px;
+
+  padding: 16px 24px;
+
+  box-sizing: border-box;
+
+  color: var(--accentColor);
+
+  border: 1px solid var(--accentColor);
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.contact-resume svg {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contact-resume:hover {
+  color: var(--backgroundColor);
+  background-color: var(--accentColor);
+}
+
+/* =========================================
+   BUILT BY
+========================================= */
+
+.contact-box h2 {
+  margin: 0 0 25px;
+
+  font-size: 20px;
+  line-height: 1.4;
+
+  font-weight: 500;
+}
+
+.contact-box h2 span {
+  color: var(--accentColor);
+}
+
+.contact-box h5 {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 6px;
+
+  margin: 0;
+
+  color: #888;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  font-weight: 400;
+}
+
+.contact-box h5 svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media only screen and (max-width: 1100px) {
+  .contact-container > h3 {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+
+  .contact-flex {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media only screen and (max-width: 700px) {
+  .contact-section {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .contact-container > h3 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .contact-flex {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .contact-social {
+    width: 200px;
+  }
+
+  .contact-resume {
+    min-width: 200px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media only screen and (max-width: 480px) {
+  .contact-container > h3 {
+    font-size: 40px;
+  }
+
+  .contact-box p a {
+    font-size: 14px;
+  }
+
+  .contact-social {
+    font-size: 18px;
+  }
+
+  .contact-box h2 {
+    font-size: 18px;
+  }
+
+  .contact-box h5 {
+    font-size: 12px;
+  }
+}
