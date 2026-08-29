@@ -2,9 +2,15 @@
 
 An open-source, fully responsive portfolio template featuring a custom 3D avatar, physics-based interactions, and scroll-driven animations. Fork it, swap in your own details, and deploy.
 
-**Live demo:** [shahrikin.vercel.app](https://shahrikin.vercel.app)
+## 🌐 Live Demo
 
-<img width="1902" height="1022" alt="3D Creative Portfolio preview" src="https://github.com/user-attachments/assets/2296dc44-162a-4aa2-92c7-7c83f0500003" />
+[View My Portfolio](https://krishnakanthportfolio.vercel.app/)
+
+## 📸 Portfolio Preview
+
+<a href="https://krishnakanthportfolio.vercel.app/">
+  <img src="public/portfolio-preview.png" alt="Portfolio Preview">
+</a>
 
 ## Features
 
@@ -28,7 +34,7 @@ An open-source, fully responsive portfolio template featuring a custom 3D avatar
 
 ```bash
 # Clone the repo
-git clone https://github.com/Rikinshah787/3d-creative-portfolio-AI.git
+git clone https://github.com/KRISHNAKANTH083/krishnakanth_portfolio
 cd 3d-creative-portfolio-AI
 
 # Install dependencies
